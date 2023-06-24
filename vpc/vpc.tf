@@ -1,3 +1,7 @@
+provider "aws" {
+  region = "ap-south-1"
+}
+
 resource "aws_vpc" "jenkinsvpc" {
   cidr_block           = "172.16.0.0/16"
   enable_dns_hostnames = true
